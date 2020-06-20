@@ -6,8 +6,7 @@ import id.atmaja.baserestapi.config.exception.TokenExpiredException;
 import id.atmaja.baserestapi.utils.JwtTokenUtil;
 import org.springframework.stereotype.Controller;
 
-@Controller
-public class BaseController {
+@Controller public class BaseController {
 
     protected String authenticate(String token) throws TokenException {
         if (token == null || "".equals(token)) {
@@ -22,4 +21,5 @@ public class BaseController {
 
         return tokenData;
     }
+
 }

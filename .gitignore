@@ -2,12 +2,11 @@ target
 .idea
 gradle
 build
-libs
 
 target/*
 .gradle
 .idea/*
 */build/*
-libs/*
+libs/*.jar
 
 *.iml

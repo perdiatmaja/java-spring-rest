@@ -5,7 +5,7 @@ import id.atmaja.baserestapi.base.BaseResponse;
 
 public class ExceptionUtil {
 
-    public static BaseResponse<Void> createGeneralErrorResponse() {
+    public static BaseResponse createGeneralErrorResponse() {
         return createErrorResponse(ErrorResponse.Message.GENERAL_ERROR, ErrorResponse.Code.GENERAL_ERROR);
     }
 

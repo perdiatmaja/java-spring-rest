@@ -6,11 +6,9 @@ import org.springframework.stereotype.Service;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 
-@Service
-public class BaseService {
+@Service public class BaseService {
 
-    @Autowired
-    private EntityManagerFactory entityManagerFactory;
+    @Autowired private EntityManagerFactory entityManagerFactory;
 
     private EntityManager entityManager;
 
@@ -26,4 +24,5 @@ public class BaseService {
             entityManager = null;
         }
     }
+
 }
