@@ -1,7 +1,7 @@
 package id.atmaja.baserestapi.utils;
 
-import id.atmaja.baserestapi.constant.ErrorResponse;
 import id.atmaja.baserestapi.base.BaseResponse;
+import id.atmaja.baserestapi.constant.ErrorResponse;
 
 public class ExceptionUtil {
 

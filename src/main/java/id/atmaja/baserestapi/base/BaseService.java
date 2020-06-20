@@ -1,16 +1,11 @@
 package id.atmaja.baserestapi.base;
 
 import id.atmaja.baserestapi.component.JpaEntityManagerFactory;
-import id.atmaja.baserestapi.rest.example.Table1;
-import id.atmaja.baserestapi.rest.example.Table2;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
 
 @Service public class BaseService {
-
-    private EntityManagerFactory entityManagerFactory;
 
     private EntityManager entityManager;
 

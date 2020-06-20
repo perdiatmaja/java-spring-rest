@@ -19,6 +19,13 @@ public class TableJoinResult {
         this.varInt2 = varInt2;
     }
 
+    public static String getSelectedColumns() {
+        return new ColumnsBuilder()
+                .columnsWithAlias("t1", "varInt", "varStr")
+                .columnsWithAlias("t2", "varInt", "varStr")
+                .build();
+    }
+
     public String getVarStr1() {
         return varStr1;
     }
@@ -49,13 +56,6 @@ public class TableJoinResult {
 
     public void setVarInt2(int varInt2) {
         this.varInt2 = varInt2;
-    }
-
-    public static String getSelectedColumns() {
-        return new ColumnsBuilder()
-                .columnsWithAlias("t1", "varInt", "varStr")
-                .columnsWithAlias("t2", "varInt", "varStr")
-                .build();
     }
 
 }

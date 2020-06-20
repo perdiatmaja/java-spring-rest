@@ -4,22 +4,13 @@ import com.mysql.cj.jdbc.MysqlDataSource;
 import id.atmaja.baserestapi.config.EnvConfig;
 import id.atmaja.baserestapi.rest.example.Table1;
 import id.atmaja.baserestapi.rest.example.Table2;
-import org.hibernate.dialect.MySQL5Dialect;
-import org.hibernate.jpa.HibernatePersistenceProvider;
 import org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl;
 import org.hibernate.jpa.boot.internal.PersistenceUnitInfoDescriptor;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
-import javax.persistence.SharedCacheMode;
-import javax.persistence.ValidationMode;
-import javax.persistence.spi.ClassTransformer;
 import javax.persistence.spi.PersistenceUnitInfo;
-import javax.persistence.spi.PersistenceUnitTransactionType;
 import javax.sql.DataSource;
-import java.io.IOException;
-import java.io.UncheckedIOException;
-import java.net.URL;
 import java.util.*;
 import java.util.stream.Collectors;
 

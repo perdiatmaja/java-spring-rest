@@ -2,7 +2,6 @@ package id.atmaja.baserestapi.rest.example;
 
 import id.atmaja.baserestapi.base.BaseResponse;
 import id.atmaja.baserestapi.base.BaseService;
-
 import id.atmaja.baserestapi.builder.ResponseBuilder;
 import id.perdiatmaja.sqlhelper.utils.QueryUtil;
 import org.springframework.stereotype.Service;
