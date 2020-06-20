@@ -1,6 +1,6 @@
 package id.atmaja.baserestapi.base;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import id.atmaja.baserestapi.component.JPAEntityManagerFactory;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityManager;
@@ -8,13 +8,13 @@ import javax.persistence.EntityManagerFactory;
 
 @Service public class BaseService {
 
-    @Autowired private EntityManagerFactory entityManagerFactory;
+    private EntityManagerFactory entityManagerFactory;
 
     private EntityManager entityManager;
 
     protected EntityManager getEntityManager() {
         closeEntityManager();
-        entityManager = entityManagerFactory.createEntityManager();
+        entityManager = JPAEntityManagerFactory.getEntityManagerFactory().createEntityManager();
         return entityManager;
     }
 
@@ -24,5 +24,4 @@ import javax.persistence.EntityManagerFactory;
             entityManager = null;
         }
     }
-
 }
