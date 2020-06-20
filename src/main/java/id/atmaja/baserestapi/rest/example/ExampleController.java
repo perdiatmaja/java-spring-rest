@@ -22,4 +22,11 @@ public class ExampleController {
     public BaseResponse example() throws Exception {
         return exampleService.index();
     }
+
+    @GetMapping(value = ExampleMap.JOIN, produces = MediaType.APPLICATION_JSON_VALUE)
+    public BaseResponse exampleJoin() throws Exception {
+        return exampleService.getJoinExample();
+    }
+
+
 }

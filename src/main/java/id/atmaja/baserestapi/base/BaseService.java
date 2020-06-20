@@ -1,6 +1,8 @@
 package id.atmaja.baserestapi.base;
 
-import id.atmaja.baserestapi.component.JPAEntityManagerFactory;
+import id.atmaja.baserestapi.component.JpaEntityManagerFactory;
+import id.atmaja.baserestapi.rest.example.Table1;
+import id.atmaja.baserestapi.rest.example.Table2;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityManager;
@@ -14,7 +16,7 @@ import javax.persistence.EntityManagerFactory;
 
     protected EntityManager getEntityManager() {
         closeEntityManager();
-        entityManager = JPAEntityManagerFactory.getEntityManagerFactory().createEntityManager();
+        entityManager = new JpaEntityManagerFactory().getEntityManager();
         return entityManager;
     }
 
@@ -24,4 +26,5 @@ import javax.persistence.EntityManagerFactory;
             entityManager = null;
         }
     }
+
 }
